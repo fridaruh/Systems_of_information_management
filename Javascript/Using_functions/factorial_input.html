@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Factorial Calculator</title>
+</head>
+<body>
+    <h1>Factorial</h1>
+    
+    <p>Enter a number:</p>
+    <input type="number" id="userInput" />
+    <button onclick="factorial()">Calculate</button>
+    <p id="output"></p>
+
+    <script type="text/javascript">
+
+// global variables
+var n;
+    var result;
+
+    function factorial() {
+        n = parseInt(document.getElementById("userInput").value);
+        result = 1;
+        for (let i = 1; i <= n; i = i + 1)
+            result = result * i;
+        document.getElementById("output").innerHTML = "Factorial: " + result;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title></title></head>
+<body>
+<h2>Functions and variable scope</h2>
+<p id="first"></p>
+
+<script type="text/javascript">
+// declare variables
+var c = 23;		
+// the value in d will be the result of the function call to addTwoIntegers()
+var d = addTwoIntegers(c,12);		// function call, invokes the function
+alert(d);
+// the “normal” program stops here
+
+function addTwoIntegers(a, b) 	// function declaration name(parameter list)
+{		
+   var result = a + b;			// a, b, and result have local scope - these variables are only "known" in the function body
+   return result;
+}
+
+</script>
+
+</body>
+</html>
