@@ -1,0 +1,13 @@
+# Dependencias del Sistema de Conversión PPTX a Markdown
+
+# Core - Procesamiento de PPTX
+python-pptx==0.6.23
+
+# API de Anthropic Claude
+anthropic==0.39.0
+
+# Procesamiento de imágenes
+Pillow==10.4.0
+
+# Manejo de variables de entorno
+python-dotenv==1.0.1
